@@ -1,0 +1,17 @@
+table_name = local
+columns_names = local_id, description
+columns_types=integer, string(60)
+max_id = 13
+1; ALMOXERIFADO
+2; SALA DE AULA 01
+3; LAB. INFORMÁTICA 01
+4; LAB. ELETRÔNICA
+5; minha casa
+6; sua casa
+7; leite ninho
+8; nesquik
+9; felipe branquinho
+10; s
+11; T; T; T; T; T; T
+12; S; A; L; A;  ; 0; 7
+13; SALA 08
