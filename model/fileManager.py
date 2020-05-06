@@ -100,3 +100,33 @@ def register(model, item):
             raise ValueError('O {} para registro não possui dados. Por favor, verifique os campos informados'.format(model))
     else:
         raise ValueError('O arquivo {}.txt não está em um formato válido. Por favor, verificar o formato do arquivo'.format(model))
+
+def upgrade (model,index,upgrade_line):
+
+    name_file = 'arquivos/' + model + '.txt'
+    file = open( name_file, 'r', encoding='utf8' )
+    file_lines = file.readlines()
+
+    table_name = file_lines[0].strip().replace( ' ', '' )
+    columns_name = file_lines[1].strip().replace( ' ', '' )
+    columns_type = file_lines[2].strip().replace( ' ', '' )
+    max_id = file_lines[3].strip().replace( ' ', '' )
+
+    if verify_table_name_format( table_name, model ) and verify_columns_format( columns_name ) \
+            and verify_columns_format( columns_type ) and verify_max_id( max_id ):
+
+     file = open( name_file, 'w', encoding='utf8' )
+
+     for i in file_lines:        #https://www.w3schools.com/python/ref_string_startswith.asp
+         #https://www.programiz.com/python-programming/methods/string/startswith
+         if file_lines.index(i)  == index + 3:
+
+                 i.split(';') #or  file.write(upgrade_line)
+                 i[1] = upgrade_line
+                 file.write(i)
+         else:
+
+                 file.write(i)
+
+
+

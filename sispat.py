@@ -1,4 +1,4 @@
-from view import menu, registro_patrimonio, registro_servidor_icti, registro_local, sair
+from view import menu, registro_patrimonio, registro_servidor_icti, registro_local, sair,upgrade_local
 from model import local, tipo_patrimonio,servidores_icti,patrimonios
 
 opcoes = ['Consultar Patrimônio (Por desrição)', 'Consultar Patrimônio (Por tombo)', 'Listagem de Patrimônio',
@@ -31,4 +31,5 @@ elif resposta == 8:
     registro_servidor_icti.register()
 elif resposta == 11:
     registro_local.register()
-
+elif resposta == 12:
+    upgrade_local.upgrade()
