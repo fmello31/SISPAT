@@ -101,11 +101,13 @@ def register(model, item):
     else:
         raise ValueError('O arquivo {}.txt não está em um formato válido. Por favor, verificar o formato do arquivo'.format(model))
 
-def upgrade (model,index,upgrade_line):
+def upgrade (model,id,old_line,upgrade_line):
 
     name_file = 'arquivos/' + model + '.txt'
     file = open( name_file, 'r', encoding='utf8' )
     file_lines = file.readlines()
+
+
 
     table_name = file_lines[0].strip().replace( ' ', '' )
     columns_name = file_lines[1].strip().replace( ' ', '' )
@@ -117,16 +119,23 @@ def upgrade (model,index,upgrade_line):
 
      file = open( name_file, 'w', encoding='utf8' )
 
-     for i in file_lines:        #https://www.w3schools.com/python/ref_string_startswith.asp
-         #https://www.programiz.com/python-programming/methods/string/startswith
-         if file_lines.index(i)  == index + 3:
-
-                 i.split(';') #or  file.write(upgrade_line)
-                 i[1] = upgrade_line
-                 file.write(i)
+     for i in file_lines:
+         if i.startswith(id):
+             i.replace(old_line,upgrade_line)
+             file.write(i)
          else:
+             file.write(i)
 
-                 file.write(i)
+def Consult (model,informationsearch):
+
+    name_file = 'arquivos/' + model + '.txt'
+    file = open( name_file, 'r', encoding='utf8' )
+    file_lines = file.readlines()
+    for linha in file_lines:
+        if linha.find(informationsearch):
+            print(linha)
+
+
 
 
 
