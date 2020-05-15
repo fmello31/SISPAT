@@ -1,7 +1,8 @@
 table_name = local
 columns_names=local_id, description
 columns_types=integer, string(60))
-max_id=0
-1
-2
-
+max_id = 4
+1;NUTIC
+2; DIREÇÃO
+3;COLEGIADO
+4; SALA DOS PROFESSORES

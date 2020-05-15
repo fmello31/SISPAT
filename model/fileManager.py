@@ -83,31 +83,33 @@ def register(model, item):
 
     if verify_table_name_format( table_name, model ) and verify_columns_format( columns_name ) \
             and verify_columns_format( columns_type ) and verify_max_id( max_id ):
-        max_id = int(max_id.split("=")[1])
+        max_id = int( max_id.split( "=" )[1] )
         new_max_id = max_id + 1
-        if len(item) > 0:
+        if len( item ) > 0:
             new_item = f'{new_max_id}'
             for column in item:
                 new_item = new_item + f'; {column}'
             new_item = new_item + '\n'
-            file_lines.append(new_item)
+            file_lines.append( new_item )
             file_lines[3] = f'max_id = {new_max_id}\n'
             file.close()
             file = open( name_file, 'w', encoding='utf8' )
-            file.writelines(file_lines)
+            file.writelines( file_lines )
             file.close()
         else:
-            raise ValueError('O {} para registro não possui dados. Por favor, verifique os campos informados'.format(model))
+            raise ValueError(
+                'O {} para registro não possui dados. Por favor, verifique os campos informados'.format( model ) )
     else:
-        raise ValueError('O arquivo {}.txt não está em um formato válido. Por favor, verificar o formato do arquivo'.format(model))
+        raise ValueError(
+            'O arquivo {}.txt não está em um formato válido. Por favor, verificar o formato do arquivo'.format(
+                model ) )
 
-def upgrade (model,id,old_line,upgrade_line):
 
+def upgrade(model, id,upgrade_line):
     name_file = 'arquivos/' + model + '.txt'
     file = open( name_file, 'r', encoding='utf8' )
     file_lines = file.readlines()
-
-
+    file.close()
 
     table_name = file_lines[0].strip().replace( ' ', '' )
     columns_name = file_lines[1].strip().replace( ' ', '' )
@@ -117,25 +119,22 @@ def upgrade (model,id,old_line,upgrade_line):
     if verify_table_name_format( table_name, model ) and verify_columns_format( columns_name ) \
             and verify_columns_format( columns_type ) and verify_max_id( max_id ):
 
-     file = open( name_file, 'w', encoding='utf8' )
+        file = open( name_file, 'w', encoding='utf8' )
 
-     for i in file_lines:
-         if i.startswith(id):
-             i.replace(old_line,upgrade_line)
-             file.write(i)
-         else:
-             file.write(i)
+        for i in range(len(file_lines)):
+            line = file_lines[i]
+            if line.startswith( str(id) ):
+                file_lines[i] = upgrade_line + '\n'
+                break
 
-def Consult (model,informationsearch):
+        file.writelines( file_lines )
+        file.close()
 
+
+def Consult(model, informationsearch):
     name_file = 'arquivos/' + model + '.txt'
     file = open( name_file, 'r', encoding='utf8' )
     file_lines = file.readlines()
     for linha in file_lines:
-        if linha.find(informationsearch):
-            print(linha)
-
-
-
-
-
+        if linha.find( informationsearch ):
+            print( linha )
