@@ -2,6 +2,9 @@ from model import fileManager
 
 
 def upgrade():
-    id = int(input('Digite o id do tipo de  patrimonio que quer atualizar :'))
-    new_tipPatrimonio = input('Digite a nova informação a ser a ser adicionado')
-    fileManager.upgrade('local', id, new_tipPatrimonio)
+    id = int(input('Informe o id do Tipo de Patrimonio:\n'))
+    new_tipPatrimonio = input('Informe o novo nome Tipo de Patrimônio:')
+    notes = input( 'Informe as observações para o Tipo de Patrimônio:' )
+    columns = {'notes', 'description'}
+    values = {notes, new_tipPatrimonio}
+    fileManager.upgrade('tipo_patrimonio', id, columns, values)

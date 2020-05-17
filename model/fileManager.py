@@ -48,6 +48,11 @@ def verify_max_id(max_id):
             return False
 
 
+#def verify_columns_in(columns_name, columns):
+
+#colocar tudo depois do igual na lista
+
+
 def print_line():
     print( '\033[30m-\033[m' * 80 )
 
@@ -105,7 +110,7 @@ def register(model, item):
                 model ) )
 
 
-def upgrade(model, id,upgrade_line):
+def upgrade(model, id, columns, values):
     name_file = 'arquivos/' + model + '.txt'
     file = open( name_file, 'r', encoding='utf8' )
     file_lines = file.readlines()
@@ -115,16 +120,28 @@ def upgrade(model, id,upgrade_line):
     columns_name = file_lines[1].strip().replace( ' ', '' )
     columns_type = file_lines[2].strip().replace( ' ', '' )
     max_id = file_lines[3].strip().replace( ' ', '' )
+    print(columns_name)
+    print(columns)
 
     if verify_table_name_format( table_name, model ) and verify_columns_format( columns_name ) \
-            and verify_columns_format( columns_type ) and verify_max_id( max_id ):
+            and verify_columns_format( columns_type ) and verify_max_id( max_id ) and columns.issubset(columns_name):
+
+        # gets the columns position to replace value in new line.
+        columns_position = []
+        for column in columns:
+            columns_position.append(columns_name.index(column))
 
         file = open( name_file, 'w', encoding='utf8' )
 
         for i in range(len(file_lines)):
             line = file_lines[i]
             if line.startswith( str(id) ):
-                file_lines[i] = upgrade_line + '\n'
+                line_columns = line.split(';')
+                for j in range(len(columns_position)):
+                    position = columns_position[j]
+                    line_columns[position] = values[j]
+                new_line = ''.join( str( x ) + ';' for x in line_columns)[:-1]
+                file_lines[i] = new_line + '\n'
                 break
 
         file.writelines( file_lines )
@@ -136,5 +153,7 @@ def Consult(model, informationsearch):
     file = open( name_file, 'r', encoding='utf8' )
     file_lines = file.readlines()
     for linha in file_lines:
-        if linha.find( informationsearch ):
-            print( linha )
+        if str(informationsearch) in linha:
+            print(linha)
+        elif linha.startswith(str(informationsearch)):
+            print(linha)

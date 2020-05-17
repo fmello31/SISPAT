@@ -1,3 +1,4 @@
 table_name = patrimonios
 columns_names=patrimonios_id, description
 columns_types=integer, string(60))
+1;Casa
