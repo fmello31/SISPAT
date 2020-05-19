@@ -48,9 +48,13 @@ def verify_max_id(max_id):
             return False
 
 
-#def verify_columns_in(columns_name, columns):
-
-#colocar tudo depois do igual na lista
+def verify_columns_in(_columns_name, _columns):
+    _columns_name = _columns_name.split( '=' )
+    _columns_name = _columns_name[1].split(',')
+    if _columns.issubset(_columns_name):
+        return True
+    else:
+        return False
 
 
 def print_line():
@@ -110,7 +114,7 @@ def register(model, item):
                 model ) )
 
 
-def upgrade(model, id, columns, values):
+def update(model, id, columns, values):
     name_file = 'arquivos/' + model + '.txt'
     file = open( name_file, 'r', encoding='utf8' )
     file_lines = file.readlines()
@@ -120,11 +124,9 @@ def upgrade(model, id, columns, values):
     columns_name = file_lines[1].strip().replace( ' ', '' )
     columns_type = file_lines[2].strip().replace( ' ', '' )
     max_id = file_lines[3].strip().replace( ' ', '' )
-    print(columns_name)
-    print(columns)
 
     if verify_table_name_format( table_name, model ) and verify_columns_format( columns_name ) \
-            and verify_columns_format( columns_type ) and verify_max_id( max_id ) and columns.issubset(columns_name):
+            and verify_columns_format( columns_type ) and verify_max_id( max_id ) and verify_columns_in():
 
         # gets the columns position to replace value in new line.
         columns_position = []
@@ -135,25 +137,31 @@ def upgrade(model, id, columns, values):
 
         for i in range(len(file_lines)):
             line = file_lines[i]
-            if line.startswith( str(id) ):
-                line_columns = line.split(';')
-                for j in range(len(columns_position)):
-                    position = columns_position[j]
-                    line_columns[position] = values[j]
-                new_line = ''.join( str( x ) + ';' for x in line_columns)[:-1]
+            if line.startswith( str(id) ): #checks if line starts with id number given by user
+                line_columns = line.split(';') #converts the line in a list where each position is a column value
+                for j in range(len(columns_position)): #getting the columns indexes
+                    position = columns_position[j] #column index
+                    line_columns[position] = values[j] #updating the column for the new value
+                new_line = ''.join( str( x ) + ';' for x in line_columns)[:-1]# converts the line columns array into a single string object
                 file_lines[i] = new_line + '\n'
                 break
 
         file.writelines( file_lines )
         file.close()
+        return True
+
+    return False
 
 
-def Consult(model, informationsearch):
+def Consult(model, key_word):
     name_file = 'arquivos/' + model + '.txt'
     file = open( name_file, 'r', encoding='utf8' )
     file_lines = file.readlines()
-    for linha in file_lines:
-        if str(informationsearch) in linha:
-            print(linha)
-        elif linha.startswith(str(informationsearch)):
-            print(linha)
+    key_word = str(key_word)
+    print( key_word )
+    for line in file_lines:
+        line_aux = line[:-1]
+        line_aux = line_aux.split(';')
+        if any( key_word == s for s in line_aux ):
+            return line_aux
+
