@@ -2,16 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a21cfcb5-a7c4-46ae-9556-949297472a84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/view/consult_PatriType.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/consult_local_description.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/consult_patrimonio_description.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/consult_patrimonio_tombo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/property.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/consult_property_description.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/consult_property_tombo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/list_local.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/list_property.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/list_property_type.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/register_property_type.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivos/local.txt" beforeDir="false" afterPath="$PROJECT_DIR$/arquivos/local.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arquivos/patrimonios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/arquivos/patrimonios.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arquivos/tipo_patrimonio.txt" beforeDir="false" afterPath="$PROJECT_DIR$/arquivos/tipo_patrimonio.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/frontController.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller/frontController.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/fileManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/fileManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/local.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/local.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/patrimonios.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/servidores_icti.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/servidores_icti.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/tipo_patrimonio.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/property_type.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sispat.py" beforeDir="false" afterPath="$PROJECT_DIR$/sispat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/upgrade_tipoPatri.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/upgrade_tipoPatri.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/consult_PatriType.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/consult_property_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/consult_local_description.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/consult_local_description.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/consult_patrimonio_description.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/consult_patrimonio_tombo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/registro_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/register_local.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/registro_patrimonio.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/register_property.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/registro_servidor_icti.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/register_employee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/sair.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/upgrade_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/upgrade_local.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/upgrade_patrimonio.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/update_property.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/upgrade_servidores.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/update_employee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/upgrade_tipoPatri.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/update_property_type.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +45,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="B" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1atxQwOMvufCvVYbkbOqyvb4Mal" />
@@ -87,7 +111,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="registro_local" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="register_local" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SISPAT" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -99,7 +123,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Felipe Melo\PycharmProjects\SISPAT\view\registro_local.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Felipe Melo\PycharmProjects\SISPAT\view\register_local.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,7 +179,7 @@
         <item itemvalue="Python.sispat" />
         <item itemvalue="Python.fileManager (1)" />
         <item itemvalue="Python.teste[" />
-        <item itemvalue="Python.registro_local" />
+        <item itemvalue="Python.register_local" />
         <item itemvalue="Python.f" />
       </list>
     </recent_temporary>
@@ -178,83 +202,118 @@
       <option name="project" value="LOCAL" />
       <updated>1589201569259</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Consult and update">
+      <created>1589745495640</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589745495640</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Examples of using mvc">
+      <created>1589923531256</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589923531256</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Consult and update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Consult and update" />
+    <MESSAGE value="Beta Version" />
+    <MESSAGE value="Examples of using mvc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Examples of using mvc" />
   </component>
   <component name="WindowStateProjectService">
     <state x="702" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587713570384">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="702" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587713570384" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588577765261">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589984703853">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588577765261" />
-    <state x="614" y="113" key="CommitChangelistDialog2" timestamp="1589201567337">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589984703853" />
+    <state x="614" y="113" key="CommitChangelistDialog2" timestamp="1589923529420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589201567337" />
+    <state x="614" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589923529420" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1589819165674">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589819165674" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1587839141735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587839141735" />
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1589744272144">
+    <state width="1899" height="640" key="GridCell.Tab.0.bottom" timestamp="1589987159850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588766424014" />
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589744272144" />
-    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1589744272144">
+    <state width="1899" height="640" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589987159850" />
+    <state width="1899" height="640" key="GridCell.Tab.0.center" timestamp="1589987159850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588766424014" />
-    <state width="1899" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589744272144" />
-    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1589744272144">
+    <state width="1899" height="640" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589987159850" />
+    <state width="1899" height="640" key="GridCell.Tab.0.left" timestamp="1589987159850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588766424013" />
-    <state width="1899" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589744272144" />
-    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1589744272144">
+    <state width="1899" height="640" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589987159850" />
+    <state width="1899" height="640" key="GridCell.Tab.0.right" timestamp="1589987159850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588766424014" />
-    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589744272144" />
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1588597641178">
+    <state width="1899" height="640" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589987159850" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1589986620646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588597641178" />
-    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1588597641178">
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589986620646" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1589986620646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588597641178" />
-    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1588597641178">
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589986620646" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1589986620646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588597641178" />
-    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1588597641178">
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589986620646" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1589986620646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588597641178" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589986620646" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1589555612082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589555612082" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1589729651376">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589923547756">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589923547756" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1589805755017">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="467" y="241" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1588766231592" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589729651376" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589805755017" />
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588605296598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588605296598" />
-    <state x="591" y="65" width="737" height="909" key="find.popup" timestamp="1589555461475">
+    <state x="591" y="65" width="737" height="909" key="find.popup" timestamp="1589921568434">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="591" y="65" width="737" height="909" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589555461475" />
+    <state x="591" y="65" width="737" height="909" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589921568434" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

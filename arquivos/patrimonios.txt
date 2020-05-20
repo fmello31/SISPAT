@@ -1,4 +1,5 @@
-table_name = patrimonios
+table_name=patrimonios
 columns_names=patrimonios_id, description
 columns_types=integer, string(60))
+max_id=1
 1;Casa

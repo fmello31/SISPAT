@@ -1,7 +1,8 @@
-from view import menu, registro_patrimonio, registro_servidor_icti, registro_local, sair, upgrade_local, \
-    upgrade_patrimonio, upgrade_servidores, upgrade_tipoPatri,consult_patrimonio_description,consult_patrimonio_tombo,consult_local_description,consult_PatriType
-from model import local, tipo_patrimonio, servidores_icti, patrimonios
+from view import menu, register_property, register_employee, register_local, upgrade_local, \
+    update_property, update_employee, update_property_type,list_local,list_property,consult_property_description,consult_property_tombo,list_property_type,consult_local_description,consult_property_type
+from controller import frontController
 
+sysout = False
 opcoes = ['Consultar Patrimônio (Por desrição)', 'Consultar Patrimônio (Por tombo)', 'Listagem de Patrimônio',
           'Registro de Patrimônio',
           'Atualização dos Dados do Patrimônio', 'Lanaçamento de Entrada do Patrimônio (Por Local e Nota)',
@@ -14,37 +15,43 @@ opcoes = ['Consultar Patrimônio (Por desrição)', 'Consultar Patrimônio (Por 
           'Listagem do Tipo de Patrimônio',
           'Consulta do Tipo de Patrimônio (Por descrição ou Código)', 'Sair']
 
-resposta = menu.gerarMenu(opcoes)
+while not sysout:
+    #TODO Sispat > view > frontcontroller > model > filemanager
+    resposta = menu.gerarMenu(opcoes)
+    if resposta == 19:
+        sysout = True
+    elif resposta == 13:
+        list_local.list()
+    elif resposta == 17:
+        list_property_type.list()
+    elif resposta == 10:
+        frontController.list()
+    elif resposta == 3:
+        list_property.list()
+    elif resposta == 4:
+        register_property.register()
+    elif resposta == 8:
+        register_employee.register()
+    elif resposta == 11:
+        register_local.register()
+    elif resposta == 12:
+        upgrade_local.update()
+    elif resposta == 5:
+        update_property.update()
+    elif resposta == 9:
+        update_employee.update()
+    elif resposta == 16:
+        update_property_type.update()
+    elif resposta == 1 :
+        consult_property_description.consult()
+    elif resposta == 2 :
+        consult_property_tombo.consult()
+    elif resposta == 14:
+        consult_local_description.consult()
+    elif resposta == 18:
+        consult_property_type.consult()
 
-if resposta == 19:
-    sair.sair()
-elif resposta == 13:
-    local.list()
-elif resposta == 17:
-    tipo_patrimonio.list()
-elif resposta == 10:
-    servidores_icti.list()
-elif resposta == 3:
-    patrimonios.list()
-elif resposta == 4:
-    registro_patrimonio.register()
-elif resposta == 8:
-    registro_servidor_icti.register()
-elif resposta == 11:
-    registro_local.register()
-elif resposta == 12:
-    upgrade_local.upgrade()
-elif resposta == 5:
-    upgrade_patrimonio.upgrade()
-elif resposta == 9:
-    upgrade_servidores.upgrade()
-elif resposta == 16:
-    upgrade_tipoPatri.upgrade()
-elif resposta == 1 :
-    consult_patrimonio_description.consult()
-elif resposta == 2 :
-    consult_patrimonio_tombo.consult()
-elif resposta == 14:
-    consult_local_description.consult()
-elif resposta == 18:
-    consult_PatriType.consult()
+    if not sysout:
+        opcao = input( 'Deseja "sair" ou "voltar" para o menu ?' ).upper()
+        if opcao == 'SAIR':
+           sysout =True

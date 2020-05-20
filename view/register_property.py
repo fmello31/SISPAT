@@ -1,5 +1,6 @@
 from model import fileManager
 
+###DUVIDAS
 
 def register():
     newpatrimoniolist = []

@@ -51,7 +51,7 @@ def verify_max_id(max_id):
 def verify_columns_in(_columns_name, _columns):
     _columns_name = _columns_name.split( '=' )
     _columns_name = _columns_name[1].split(',')
-    if _columns.issubset(_columns_name):
+    if set(_columns) <= set(_columns_name):
         return True
     else:
         return False
@@ -126,28 +126,33 @@ def update(model, id, columns, values):
     max_id = file_lines[3].strip().replace( ' ', '' )
 
     if verify_table_name_format( table_name, model ) and verify_columns_format( columns_name ) \
-            and verify_columns_format( columns_type ) and verify_max_id( max_id ) and verify_columns_in():
+            and verify_columns_format( columns_type ) and verify_max_id( max_id ) and verify_columns_in(_columns_name=columns_name, _columns=columns):
 
         # gets the columns position to replace value in new line.
         columns_position = []
+        _columns_name = columns_name.split( '=' )
+        _columns_name = _columns_name[1].split( ',' )
         for column in columns:
-            columns_position.append(columns_name.index(column))
+            columns_position.append(_columns_name.index(column))
 
-        file = open( name_file, 'w', encoding='utf8' )
-
-        for i in range(len(file_lines)):
-            line = file_lines[i]
-            if line.startswith( str(id) ): #checks if line starts with id number given by user
-                line_columns = line.split(';') #converts the line in a list where each position is a column value
-                for j in range(len(columns_position)): #getting the columns indexes
-                    position = columns_position[j] #column index
-                    line_columns[position] = values[j] #updating the column for the new value
-                new_line = ''.join( str( x ) + ';' for x in line_columns)[:-1]# converts the line columns array into a single string object
-                file_lines[i] = new_line + '\n'
-                break
-
-        file.writelines( file_lines )
-        file.close()
+        try:
+            file = open( name_file, 'w', encoding='utf8' )
+            for i in range(len(file_lines)):
+                line = file_lines[i]
+                if line.startswith( str(id) ): #checks if line starts with id number given by user
+                    line_columns = line.split(';') #converts the line in a list where each position is a column value
+                    for j in range(len(columns_position)): #getting the columns indexes
+                        position = columns_position[j] #column index
+                        line_columns[position] = values[j] #updating the column for the new value
+                    new_line = ''.join( str( x ) + ';' for x in line_columns)[:-1]# converts the line columns array into a single string object
+                    file_lines[i] = new_line + '\n'
+                    break
+        except Exception as e:
+            print(e)
+            return False
+        finally:
+            file.writelines( file_lines )
+            file.close()
         return True
 
     return False
