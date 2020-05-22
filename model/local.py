@@ -15,5 +15,5 @@ def update(id, description):
     description = [description]
     return fileManager.update(model='local', id=id, columns=columns, values=description)
 
-def consult (description):
-    return fileManager.Consult('local',description)
+def find (description):
+    return fileManager.find('local',description)

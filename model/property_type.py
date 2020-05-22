@@ -7,7 +7,10 @@ def list_property_type():
 def update_property_type(id,new_property_type,notes):
     columns = {'notes', 'description'}
     values = {notes, new_property_type}
-    return fileManager.update('tipo_ptrimonio',id,columns,values)
+    return fileManager.update(model='tipo_patrimonio',id=id,columns=columns,values=values)
 
-def consult_property_type(information_search):
-    return fileManager.Consult('tipo_patrimonio',information_search)
+def find_property_type(information_search):
+    return fileManager.find('tipo_patrimonio',information_search)
+
+def save_propert_type(description):
+    return fileManager.register('tipo_patrimonio',description)

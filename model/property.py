@@ -7,15 +7,15 @@ def list_property():
     fileManager.list('patrimonios')
 
 
-def register():
-    fileManager.register('patrimonios')
+def register(description):
+    fileManager.register('patrimonios',description)
 
 
 def update_property(id,new_property):
      columns = {'description'}
      new_property = [new_property]
-     fileManager.update('patrimonios',id,columns,new_property)
+     fileManager.update(model='patrimonios',id=id,columns=columns,values=new_property)
 
 
-def consult_property (information_search):
-    return fileManager.Consult('patrimonios', information_search )
+def find_property (information_search):
+    return fileManager.find('patrimonios', information_search )

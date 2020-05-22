@@ -1,7 +1,14 @@
-from model import fileManager
+from controller import frontController
 
 
 def update():
-    id = int(input('Digite o id do servidor que quer atualizar :'))
-    new_servidor = input('Digite a informção do servidor  a ser adicionado ')
-    fileManager.upgrade('local', id, new_servidor)
+    control = True
+    while control:
+        id = int( input( 'Digite o id do servidor que quer atualizar :' ) )
+        new_employee = input( 'Digite o nome do servidor  a ser adicionado' )
+        try:
+            if frontController.update_employee( id, new_employee ):
+                print( 'ATUALIZAÇÃO REALIZADA COM SUCESSO!' )
+                control = False
+        except ValueError as er:
+            print( f'\033[{er}. Por favor, insira novos valores válidos.' )

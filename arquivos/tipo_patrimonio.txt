@@ -1,9 +1,10 @@
 table_name= tipo_patrimonio
 columns_names=tp_id, description, notes
 columns_types=integer, string(60), string(30)
-max_id = 5
+max_id = 6
 1; PERMANENTE MÓVEIS; MOVEIS DE SALA
 2; PERMANENE MAQUINÁRIO; MAQUINÁRIO DE OPERAÇÕES
 3; CONSUMO DE LABORATÓRIO; FERRAMENTAS DE LABORATÓRIO
 4; CONSUMO DE LIMPEZA; ÁGUA SANITÁRIA, DISIFETANTE
 5; CONSUMO DE PAPELARIA ; PAPEL OFÍCIO, BORRACHA,ETC
+6; COZINHA

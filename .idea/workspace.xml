@@ -1,36 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a21cfcb5-a7c4-46ae-9556-949297472a84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/model/property.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/consult_property_description.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/consult_property_tombo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/list_local.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/list_property.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/list_property_type.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/register_property_type.py" afterDir="false" />
+    <list default="true" id="a21cfcb5-a7c4-46ae-9556-949297472a84" name="Default Changelist" comment="local methods: register, update and list are done. Views files were created for each functionality (user story): local, property and property type.">
+      <change afterPath="$PROJECT_DIR$/arquivos/servidores.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arquivos/local.txt" beforeDir="false" afterPath="$PROJECT_DIR$/arquivos/local.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arquivos/patrimonios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/arquivos/patrimonios.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivos/servidores_icti" beforeDir="false" afterPath="$PROJECT_DIR$/view/list_employee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivos/tipo_patrimonio.txt" beforeDir="false" afterPath="$PROJECT_DIR$/arquivos/tipo_patrimonio.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/frontController.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller/frontController.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/fileManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/fileManager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/local.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/patrimonios.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/servidores_icti.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/servidores_icti.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/tipo_patrimonio.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/property_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/property.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/property.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/property_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/property_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/servidores_icti.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/employee.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sispat.py" beforeDir="false" afterPath="$PROJECT_DIR$/sispat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/consult_PatriType.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/consult_property_type.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/consult_local_description.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/consult_local_description.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/consult_patrimonio_description.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/consult_patrimonio_tombo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/registro_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/register_local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/registro_patrimonio.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/register_property.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/registro_servidor_icti.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/register_employee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/sair.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/upgrade_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/upgrade_local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/upgrade_patrimonio.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/update_property.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/upgrade_servidores.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/update_employee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/upgrade_tipoPatri.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/update_property_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/consult_local_description.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/find_local_description.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/consult_property_description.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/find_property_description.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/consult_property_tombo.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/find_property_tombo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/consult_property_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/find_property_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/register_employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/register_employee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/register_property.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/register_property.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/register_property_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/register_property_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/update_employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/update_employee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/update_property.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/update_property.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/update_property_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/update_property_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/upgrade_local.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/update_local.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589923531256</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="local methods: register, update and list are done. Views files were created for each functionality (user story): local, property and property type.">
+      <created>1589987510340</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589987510340</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,7 +236,8 @@
     <MESSAGE value="Consult and update" />
     <MESSAGE value="Beta Version" />
     <MESSAGE value="Examples of using mvc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Examples of using mvc" />
+    <MESSAGE value="local methods: register, update and list are done. Views files were created for each functionality (user story): local, property and property type." />
+    <option name="LAST_COMMIT_MESSAGE" value="local methods: register, update and list are done. Views files were created for each functionality (user story): local, property and property type." />
   </component>
   <component name="WindowStateProjectService">
     <state x="702" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587713570384">
@@ -245,54 +248,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589984703853" />
-    <state x="614" y="113" key="CommitChangelistDialog2" timestamp="1589923529420">
+    <state x="275" y="113" key="CommitChangelistDialog2" timestamp="1590150056929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589923529420" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1589819165674">
+    <state x="275" y="113" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590150056929" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1590148889048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589819165674" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590148889048" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1587839141735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587839141735" />
-    <state width="1899" height="640" key="GridCell.Tab.0.bottom" timestamp="1589987159850">
+    <state width="1899" height="331" key="GridCell.Tab.0.bottom" timestamp="1590161783601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588766424014" />
-    <state width="1899" height="640" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589987159850" />
-    <state width="1899" height="640" key="GridCell.Tab.0.center" timestamp="1589987159850">
+    <state width="1345" height="418" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590094178070" />
+    <state width="1899" height="331" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590161783601" />
+    <state width="1899" height="331" key="GridCell.Tab.0.center" timestamp="1590161783601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588766424014" />
-    <state width="1899" height="640" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589987159850" />
-    <state width="1899" height="640" key="GridCell.Tab.0.left" timestamp="1589987159850">
+    <state width="1345" height="418" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590094178070" />
+    <state width="1899" height="331" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590161783601" />
+    <state width="1899" height="331" key="GridCell.Tab.0.left" timestamp="1590161783601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588766424013" />
-    <state width="1899" height="640" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589987159850" />
-    <state width="1899" height="640" key="GridCell.Tab.0.right" timestamp="1589987159850">
+    <state width="1345" height="418" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590094178070" />
+    <state width="1899" height="331" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590161783601" />
+    <state width="1899" height="331" key="GridCell.Tab.0.right" timestamp="1590161783601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588766424014" />
-    <state width="1899" height="640" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589987159850" />
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1589986620646">
+    <state width="1345" height="418" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590094178070" />
+    <state width="1899" height="331" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590161783601" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1590144774141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589986620646" />
-    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1589986620646">
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590144774141" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1590144774141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589986620646" />
-    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1589986620646">
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590144774141" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1590144774141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589986620646" />
-    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1589986620646">
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590144774141" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1590144774141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589986620646" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590144774141" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1589555612082">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -310,6 +313,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588605296598" />
+    <state x="531" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1590141750142">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="531" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1590141750142" />
     <state x="591" y="65" width="737" height="909" key="find.popup" timestamp="1589921568434">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -158,15 +158,27 @@ def update(model, id, columns, values):
     return False
 
 
-def Consult(model, key_word):
+def find(model, key_word):
     name_file = 'arquivos/' + model + '.txt'
     file = open( name_file, 'r', encoding='utf8' )
     file_lines = file.readlines()
     key_word = str(key_word)
     print( key_word )
     for line in file_lines:
-        line_aux = line[:-1]
-        line_aux = line_aux.split(';')
-        if any( key_word == s for s in line_aux ):
-            return line_aux
+        line = line.split(';')
+        if any( key_word == s for s in line):
+            return line
+
+'''def find(model, key_word):
+    name_file = 'arquivos/' + model + '.txt'
+    file = open( name_file, 'r', encoding='utf8' )
+    file_lines = file.readlines()
+    key_word = str(key_word)
+    print( key_word )
+    for line in file_lines:
+        line = line.split(';')
+        for j in line :
+            if j == key_word:
+                return line'''
+
 

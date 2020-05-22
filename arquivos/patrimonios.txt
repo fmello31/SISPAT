@@ -1,5 +1,6 @@
 table_name=patrimonios
 columns_names=patrimonios_id, description
 columns_types=integer, string(60))
-max_id=1
-1;Casa
+max_id = 2
+1;SKDPKS
+2; SALA

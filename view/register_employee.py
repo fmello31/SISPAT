@@ -1,12 +1,13 @@
-from model import fileManager
+from controller import frontController
 
 def register () :
-        newServidores = []
-        servidor = ''
-        while servidor != 'sair':
-            servidor = input('Digite novo servidor (nome completo; número de matricula do Siape; tipo de usuário; senha ')
-            if servidor != 'sair':
-                newServidores.append(servidor)
-            else:
-                break
-        fileManager.register('servidores_icti', newServidores)
+
+
+        control = True
+        while control:
+            employee = input( 'Digite nome do servidor que quer registrar : ' )
+            try:
+                frontController.register_employee( employee )
+                control = False
+            except ValueError as er:
+                print( f'\033[{er}' )

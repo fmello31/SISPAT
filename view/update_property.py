@@ -16,7 +16,3 @@ def update():
                 print('Estranho! Parece que algo de errado aconteceu com o seu arquivo de  patrimonios. Por favor, contacte o suporte de TI.' )
         except ValueError as er:
             print( f'\033[{er}. Por favor, insira novos valores válidos.' )
-    else:
-        fim = input( 'DESEJA "VOLTAR" PARA O  MENU PRINCIPAL OU "SAIR" ?' ).upper()
-        if fim == 'Sair':
-            sair()

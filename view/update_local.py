@@ -1,12 +1,13 @@
 from controller import frontController
 
 
-def consult ():
+def update():
     control = True
     while control:
-        description = input( 'Digite a descrição do local :' ).upper()
+        id = int( input( 'Digite o id do local que quer atualizar :' ) )
+        new_local = input( 'Digite o novo local a ser adicionado' )
         try:
-            if frontController.consult_local_description(description):
+            if frontController.update_local( id, new_local ):
                 print( 'ATUALIZAÇÃO REALIZADA COM SUCESSO!' )
                 control = False
             else:

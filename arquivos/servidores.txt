@@ -1,0 +1,8 @@
+table_name= servidores
+columns_names=servidores_id, description, notes
+columns_types=integer, string(60), string(30)
+max_id = 4
+1;NADA
+2;DANAERYS
+3; FELIPE
+4; LUCAS

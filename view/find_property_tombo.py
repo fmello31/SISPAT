@@ -1,12 +1,12 @@
 from controller import frontController
 
 
-def register():
+def find ():
     control = True
     while control:
-        description = input( 'Digite a informação que quer registrar do  patrimônio : ' )
+        tombo = int(input( 'Digite o tombo do patrimônio  : ' ))
         try:
-            frontController.register_property( description )
+            frontController.find_property( tombo )
             control = False
         except ValueError as er:
             print( f'\033[{er}' )
