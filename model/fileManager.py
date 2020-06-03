@@ -163,10 +163,9 @@ def find(model, key_word):
     file = open( name_file, 'r', encoding='utf8' )
     file_lines = file.readlines()
     key_word = str(key_word)
-    print( key_word )
     for line in file_lines:
         line = line.split(';')
-        if any( key_word == s for s in line):
+        if any( key_word in s for s in line):
             return line
 
 '''def find(model, key_word):
@@ -174,11 +173,10 @@ def find(model, key_word):
     file = open( name_file, 'r', encoding='utf8' )
     file_lines = file.readlines()
     key_word = str(key_word)
-    print( key_word )
     for line in file_lines:
         line = line.split(';')
-        for j in line :
-            if j == key_word:
+        for word in line :
+            if word == key_word:
                 return line'''
 
 

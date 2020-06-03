@@ -89,7 +89,7 @@ def update_property(id, description):
 def find_property(information_search):
     if  3 < len(information_search) < 60 :
         information_search = information_search.upper()
-        return property.consult_property( information_search )
+        return property.find_property( information_search )
     elif information_search == int:
         return property.find_property(information_search)
     else :

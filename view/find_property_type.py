@@ -10,10 +10,10 @@ def find():
     elif searchType == 'ID' :
         information_search = int(input('Digite o Id do tipo de patrimonio :'))
 
-        if frontController.find_property_type(information_search):
-            print( 'ATUALIZAÇÃO REALIZADA COM SUCESSO!' )
+    if frontController.find_property_type(information_search):
+            print( 'BUSCA REALIZADA COM SUCESSO!' )
             control = False
-        else:
+    else:
             print(
                 'Estranho! Parece que algo de errado aconteceu com o seu arquivo de tipo de patrimonios. Por favor, contacte o suporte de TI.' )
 

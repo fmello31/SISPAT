@@ -1,8 +1,7 @@
 from controller import frontController
 
+
 def register () :
-
-
         control = True
         while control:
             employee = input( 'Digite nome do servidor que quer registrar : ' )
